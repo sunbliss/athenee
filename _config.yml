@@ -1,0 +1,32 @@
+# Site settings
+title: "Athénée"
+email: hello@mail.io
+description: ""
+url: "http://sunbliss.github.io"
+baseurl: "/athenee"
+flickr_username: ""
+
+# Owner/author information
+owner:
+  name:   "Athénée"
+  avatar: ""
+  favicon: favicon.ico
+
+# Internal nav
+nav:
+ gallery1: "baseurl/gallery1/"
+ gallery2: "baseurl/gallery2/"
+ gallery3: "baseurl/gallery3/"
+ gallery4: "baseurl/gallery4/"
+ gallery5: "baseurl/gallery5/"
+ about: "baseurl/about/"
+
+# Server
+destination:      	 ./_site
+port:             	 4000
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+highlighter: rouge
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]

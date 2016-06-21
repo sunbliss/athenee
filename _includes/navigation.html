@@ -1,0 +1,62 @@
+  <div class="col-sm-2">
+   <div class="sidenav text-center" style="width: initial; margin-top: 5em;">
+
+     
+       <ul class="nav nav-tabs nav-stacked">
+          <li><a class="home" href="{{ site.baseurl }}/">HOME</a></li>
+          <li><a class="gallery1" href="{{ site.baseurl }}/gallery1/">GALLERY1</a></li>
+          <li><a class="gallery2" href="{{ site.baseurl }}/gallery2/">GALLERY2</a></li>
+          <li><a class="gallery3" href="{{ site.baseurl }}/gallery3/">GALLERY3</a></li>
+          <li><a class="gallery4" href="{{ site.baseurl }}/gallery4/">GALLERY4</a></li>
+          <li><a class="gallery5" href="{{ site.baseurl }}/gallery5/">GALLERY5</a></li>
+            <li><a class="about" href="{{ site.baseurl }}/about/">ABOUT</a></li>
+     </ul>
+
+<ul class="list-inline">
+         {% if site.flickr_username %}
+                    <li>
+                        <a href="https://flickr.com/photos/{{ site.flickr_username }}">
+                            <span class="fa">
+                                <i class="fa fa-flickr fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+            <li>
+    <a href="mailto:{{ site.email }}" target="_blank" title="Email">
+                       <span class="fa">
+                                <i class="fa fa-envelope-o fa-inverse"></i>
+                          </span>
+                   </a> </li>
+               <li>
+       <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                            <span class="fa">
+                                <i class="fa fa-rss fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+     </ul>
+
+</div>
+
+{% if page.note %}
+<div class="note text-center" style="font-size:.75em; line-height:normal; width:initial;">
+  <span>{{ page.note }}</span>
+  </div>
+  {% endif %}
+  
+</div>
+
+<style>
+body.home  a.home, 
+body.gallery1  a.gallery1, 
+body.gallery2  a.gallery2, 
+body.gallery3 a.gallery3,
+body.gallery4 a.gallery4,
+body.gallery5 a.gallery5,
+body.about a.about  {
+/**your custom styles here**/
+   color: #42A989;
+   text-decoration: none;
+}
+</style>

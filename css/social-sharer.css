@@ -1,0 +1,131 @@
+.img-sharer {
+  position: relative;
+}
+
+.img-sharer:hover .button {
+  -webkit-transform: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+   z-index: 9999;
+}
+
+.img-sharer-buttons {
+  position: absolute;
+  overflow: hidden;
+}
+
+.vert .img-sharer-buttons {
+  width: 50px;
+  height: 200px;
+}
+
+.horiz .img-sharer-buttons {
+  width: 200px;
+  height: 50px;
+}
+
+.left .img-sharer-buttons {
+  left: 0;
+}
+
+.left.outside .img-sharer-buttons {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.right .img-sharer-buttons {
+  right: 0;
+}
+
+.right.outside .img-sharer-buttons {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.bottom .img-sharer-buttons {
+  bottom: 0;
+}
+
+.center .img-sharer-buttons {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.middle .img-sharer-buttons {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button:nth-child(1) {
+  background: rgba(255, 255, 255, .15);
+}
+
+.button:nth-child(1):hover {
+  background: transparent;
+}
+
+.button:nth-child(2) {
+  background: rgba(255, 255, 255, .15);
+}
+
+.button:nth-child(2):hover {
+  background: transparent;
+}
+
+.button:nth-child(3) {
+  background: rgba(255, 255, 255, .15);
+}
+
+.button:nth-child(3):hover {
+  background: transparent;
+}
+
+.button:nth-child(4) {
+  background: rgba(255, 255, 255, .15);
+}
+
+.button:nth-child(4):hover {
+  background: transparent;
+}
+
+.left.inside .button,
+.right.outside .button {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.left.outside .button {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.right.inside .button {
+  -webkit-transform: translateX(400%);
+  transform: translateX(400%);
+}
+
+.center.bottom .button,
+.left.bottom .button,
+.right.bottom .button {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.middle .button {
+  opacity: 0;
+}

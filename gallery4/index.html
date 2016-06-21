@@ -1,0 +1,42 @@
+---
+layout: default
+title: "GALLERY #4"
+gallery-name: gallery4
+images:
+ - image_path: /archive/gallery4/1.jpg
+ - image_path: /archive/gallery4/2.jpg
+ - image_path: /archive/gallery4/3.jpg
+note: I am a simple gallery description
+---
+
+<html lang="en">
+<head>
+
+
+</head>
+
+<body class="gallery4">
+ 
+  {% include title.html %}
+         
+<div class="container-fluid">    
+  <div class="row">
+
+    {% include navigation.html %}
+
+<div class="col-sm-10" style="padding-top: 1.5em;"> 
+
+    {% include gallery.html %}
+ 
+</div> 
+
+ </div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  {% include footer.html %}
+</footer>
+
+</body>
+</html>

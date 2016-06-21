@@ -1,0 +1,33 @@
+<div class="slideshow">
+
+    {% for image in page.images %}  
+            
+          <div class="slide"> 
+            <div class="img-sharer horiz top right inside">
+          <div class="img-sharer-buttons">
+
+            <div class="button">
+              <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ image.image_path }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" target="_blank"> <i class="fa fa-facebook" title="Share on Facebook" style="color:white; margin-left:20px; margin-top:20px;"></i></a>
+            </div>
+            
+            <div class="button">
+          <a href="http://www.twitshot.com/?image={{ site.url }}{{ site.baseurl }}{{ image.image_path }}" onclick="window.open(this.href, 'twitshot-share','width=580,height=350');return false;" target="_blank"> <i class="fa fa-twitter" title="Twitshot" style="color:white;
+          margin-left:20px; margin-top:20px;"></i></a>
+        </div>
+
+        <div class="button">
+          <a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ image.image_path }}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" target="_blank"> <i class="fa fa-google-plus" title="Share on Google Plus" style="color:white; margin-left:20px; margin-top:20px;"></i></a>
+        </div>
+
+        <div class="button">
+          <a href="http://pinterest.com/pin/create/button/?media={{ site.url }}{{ site.baseurl }}{{ image.image_path }}" target="_blank" count-layout="none" onclick="window.open(this.href, 'selectPinImage', 'width=490,height=530'); return false"> <i class="fa fa-pinterest" title="Share on Pinterest" style="color:white; margin-left:20px; margin-top:20px; cursor: pointer;"></i></a>
+        </div>   
+              </div>
+
+                     <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}">  
+             
+                 </div>
+              </div>
+
+            {% endfor %}
+</div>
