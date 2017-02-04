@@ -3125,6 +3125,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
+  font-weight: bolder;
   margin-right: 2px;
   line-height: 1em;
   border: 0;
