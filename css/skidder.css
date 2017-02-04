@@ -66,12 +66,12 @@
 .skidder-viewport .skidder-clickwrapper .skidder-prev {
   float: left;
   margin-left: 5px;
-  background-image: url('/{{ site.baseurl }}/slide_left.png');
+  background-image: url("../slide_left.png");
 }
 .skidder-viewport .skidder-clickwrapper .skidder-next {
   float: right;
   margin-right: 5px;
-  background-image: url('/{{ site.baseurl }}/slide_right.png');
+  background-image: url("../slide_right.png");
 }
 .skidder-viewport .skidder-clickwrapper .skidder-next.jumpback {
   background-image: url('./images/slide_left.png');
